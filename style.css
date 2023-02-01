@@ -1,0 +1,135 @@
+@font-face {
+    font-family: logo;
+    src: url(SigmarOne-Regular.ttf);
+}
+@font-face {
+    font-family: paratext;
+    src: url(Itim-Regular.ttf);
+}
+.leftside {
+    flex-shrink: 2;
+}
+.bar {
+    position: absolute;
+    top:20vh;
+    height: 100px;
+    width: 40vw;
+    background-color: hsla(28, 0%, 21%, 0.2);
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+    justify-content: center;
+}
+.title{
+    font-size: 3rem;
+    margin-left: 10px;
+    font-family:logo;
+    color: rgb(242, 235, 202);
+    line-height: 2.5rem; 
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px; 
+}
+
+.logo {
+    margin-left: 10px;
+
+}
+
+.coffee{
+    width: 40vw;
+}
+
+.rightside {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: bisque;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.top {
+    margin-top: 8vh;
+}
+.greybar{
+
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    font-family: paratext;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.formtitle {
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    padding-bottom: 10px;
+}
+
+.form {
+    font-size: 1rem;
+    padding-top: 10px;
+    background-color: antiquewhite;
+    width: 60vw;
+    font-family: paratext;
+    
+    line-height: 2rem;
+}
+
+.formflex {
+    display: flex;
+    flex-direction: row;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.first, .last, .tele, .pass, .firmpass, .mail {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.login {
+    padding-top: 10px;
+    
+}
+
+.fullsend, .login{
+    padding-left: 3rem;
+}
+
+.rightform {
+    padding-left: 6rem;
+}
+
+.leftform, .rightform {
+    padding-bottom: 10px;
+}
+
+.bottom {
+align-self: flex-start;
+padding-top: 2rem;
+font-family: paratext;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+
+button {
+    font-family: paratext;
+}
