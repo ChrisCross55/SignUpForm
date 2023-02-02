@@ -42,38 +42,44 @@
                         <div class="first">
                             <label for="fname">FIRST NAME</label>
                             <input type="text" id="fname" pattern="[a-zA-Z]+"
-                            name="fname" value="John">
+                            name="fname" placeholder="John" minlength="2" required>
                         </div>
                         <div class="mail">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" 
-                            name="email" value="example@email.com">
+                            <input type="email" id="email" required
+                            name="email" placeholder="example@email.com" minlength="6">
                         </div>
                         <div class="pass">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" 
+                            <input type="password" id="password" required
                             pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                            name="password">
+                            name="password" minlength="8" maxlength="15"
+                            placeholder="8-15 characters required">
+                            
                         </div>
                     </div>
                     <div class="rightform">
                         <div class="last">
                             <label for="lname">LAST NAME</label>
                             <input type="text" id="lname" pattern="[a-zA-Z]+"
-                            name="lname" value="Doe">
+                            name="lname" placeholder="Doe" minlength="2" required>
                         </div>
                         <div class="tele">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="text" id="phone" pattern="\d{3}[\-]\d{3}[\-]\d{4}
-                            " name="phone" value="123-456-7890">
+                            <input type="tel" id="phone" minlength="12"
+                             pattern="\d{3}[\-]\d{3}[\-]\d{4}" 
+                             name="phone" placeholder='123-456-7890'
+                             title="Please enter valid phone number such as 111-222-3333"
+                              >
                         </div>
                         <div class="firmpass">
                             <label for="confirmpw">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmpw"
+                            <input type="password" id="confirmpw" required
                             pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
-                            name="confirmpw">
+                            name="confirmpw" minlength="8" maxlength="15">
                         </div>
                     </div>
+                    <div id="describe">Include: One Uppercase, One Lowercase, and One Special Character</div>
                 </div>
                 
             </form>
@@ -85,7 +91,7 @@
                 <button type="submit" form="signup">Create Account</button>
             </div>
             <div class="login">
-                Already have an account? <a href="">Log In</a>
+                Already have an account? <a href="">Login</a>
             </div>
         </div>
         

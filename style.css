@@ -6,8 +6,18 @@
     font-family: paratext;
     src: url(Itim-Regular.ttf);
 }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
 .leftside {
     flex-shrink: 2;
+    background-color: bisque;
 }
 .bar {
     position: absolute;
@@ -39,6 +49,7 @@
 
 .coffee{
     width: 40vw;
+    height: 150vh;
 }
 
 .rightside {
@@ -59,9 +70,6 @@ body {
 
 .top {
     margin-top: 8vh;
-}
-.greybar{
-
 }
 
 .paragraph {
@@ -132,4 +140,56 @@ a {
 
 button {
     font-family: paratext;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight:500;
+    background-color:rgb(255, 199, 15);
+    font-size: large;
+    color:black;
+    box-shadow: 2px 4px 5px 0px #717377;
+    border: rgb(255, 199, 15);
+}
+
+button:hover, button:focus {
+    border: 5px double rgb(13, 7, 7);
+    cursor: pointer;
+    padding: 5.5px;
+    font-weight: 800;
+    background-color: rgb(255, 199, 15);
+}
+
+input {
+    border-radius: 3px;
+    border: 1px solid blue;
+}
+
+input:valid {
+    border-color:rgb(140, 226, 140);
+}
+
+input:invalid {
+    border-color: rgb(247, 56, 56);
+}
+
+input:focus {
+    box-shadow: 3px 5px 5px 0px #B5B5B5;
+    border-color: blue;
+    border: 3px solid blue;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(206, 38, 38);
+}
+
+#describe {
+    font-size:smaller;
+    line-height: 1rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 15px;
+    position:relative;
+    top:187px;
+    right:500px;
+    min-width: 400px;
 }
